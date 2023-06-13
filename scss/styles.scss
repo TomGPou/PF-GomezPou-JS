@@ -1,0 +1,26 @@
+// FONTS imports
+
+
+// RESET
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // font-family: ;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+// UTILITIES
+@import "utilities/variables";
+@import "utilities/mixins";
+@import "utilities/utilities";
+
+// COMPONENTS
+@import "components/navbar";
+@import "components/footer";
+
+body{
+    background-color: $c-primary;
+}

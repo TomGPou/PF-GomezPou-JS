@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.logo {
+  height: 20vh;
+  background-color: #F1910F;
+}
+
+.navbar {
+  background-color: #F1910F;
+}
+
+body {
+  background-color: #04151F;
+}/*# sourceMappingURL=styles.css.map */

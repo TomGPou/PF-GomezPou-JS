@@ -1,6 +1,11 @@
 .logo{
-    height: 20vh;
+    height: 25vh;
     background-color: $c-tertiary;
+
+    img{
+        height: 100%;
+        width: auto;
+    }
 }
 .navbar{
     background-color: $c-tertiary;

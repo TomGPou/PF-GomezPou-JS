@@ -7,5 +7,11 @@
             "savePath": "/css",
             "savePathReplacementPairs": null
         }
-    ]
+    ],
+    "console-ninja.toolsToEnableSupportAutomaticallyFor": {
+        "live-server-extension": true,
+        "live-preview-extension": true
+    },
+    "console-ninja.outputMode": "In View",
+    "liveServer.settings.port": 5501
 }

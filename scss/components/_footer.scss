@@ -1,0 +1,12 @@
+footer{
+    @include colors ($c-primary,$c-tertiary,0,0);
+
+    img{
+        height: 15vh;
+    }
+
+    .redes{
+        border-bottom: solid 1px $c-primary;
+    }
+}
+

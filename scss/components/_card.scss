@@ -1,0 +1,4 @@
+.card{
+    @include colors ($c-primary,$c-secondary,0,none);
+    box-shadow: 0 0 5px $c-quaternary;
+}

@@ -1,0 +1,14 @@
+body{
+    @include colors($c-quaternary,none,none,none);
+}
+
+main{
+    @include titulos (1.8em, $c-quaternary);
+
+    .titulos{
+        @include colors ($c-primary,$c-secondary,3px,$c-tertiary);
+        border-radius: 5px;
+        box-shadow: 0 0 5px $c-quaternary;
+        font-weight: bold;
+    }
+}

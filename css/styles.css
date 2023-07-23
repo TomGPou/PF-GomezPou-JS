@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@1,300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,14 +10,76 @@ html {
 }
 
 .logo {
-  height: 20vh;
+  height: 25vh;
   background-color: #F1910F;
+}
+.logo img {
+  height: 100%;
+  width: auto;
 }
 
 .navbar {
   background-color: #F1910F;
 }
 
+footer {
+  color: #04151F;
+  background-color: #F1910F;
+  border: 0 solid 0;
+}
+footer img {
+  height: 15vh;
+}
+footer .redes {
+  border-bottom: solid 1px #04151F;
+}
+
+.card {
+  color: #04151F;
+  background-color: #F8D04D;
+  border: 0 solid none;
+  box-shadow: 0 0 5px #FFEEF2;
+}
+
+body {
+  color: #FFEEF2;
+  background-color: none;
+  border: none solid none;
+}
+
+main h1 {
+  font-size: 1.8em;
+  font-family: "Roboto", sans-serif;
+  text-shadow: 0 0 5px #FFEEF2;
+  text-transform: uppercase;
+}
+main h2 {
+  font-size: 1.5em;
+  font-family: "Roboto", sans-serif;
+  text-shadow: 0 0 5px #FFEEF2;
+}
+main h3 {
+  font-size: 1.3em;
+  text-shadow: 0 0 10px #FFEEF2;
+}
+main .titulos {
+  color: #04151F;
+  background-color: #F8D04D;
+  border: 3px solid #F1910F;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #FFEEF2;
+  font-weight: bold;
+}
+
+#cartCards {
+  max-width: 960px;
+}
+
 body {
   background-color: #04151F;
+  font-family: "Open Sans", sans-serif;
+}
+
+main {
+  min-height: 80vh;
 }/*# sourceMappingURL=styles.css.map */

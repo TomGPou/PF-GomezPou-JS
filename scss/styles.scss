@@ -1,12 +1,11 @@
 // FONTS imports
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@1,300&display=swap');
 
 // RESET
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    // font-family: ;
 }
 html{
     scroll-behavior: smooth;
@@ -20,7 +19,16 @@ html{
 // COMPONENTS
 @import "components/navbar";
 @import "components/footer";
+@import "components/card";
+
+// PAGES
+@import "pages/home";
+@import "pages/cart";
 
 body{
     background-color: $c-primary;
+    font-family: $font1;
+}
+main{
+    min-height: 80vh;
 }

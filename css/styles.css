@@ -19,7 +19,11 @@ html {
 }
 
 .navbar {
+  padding: 0;
   background-color: #F1910F;
+}
+.navbar .container-fluid {
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 footer {
@@ -32,6 +36,9 @@ footer img {
 }
 footer .redes {
   border-bottom: solid 1px #04151F;
+}
+footer .copyright {
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .card {

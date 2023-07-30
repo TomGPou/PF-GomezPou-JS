@@ -8,5 +8,9 @@
     }
 }
 .navbar{
+    padding: 0;
     background-color: $c-tertiary;
+    .container-fluid{
+        background-color: rgba(0, 0, 0, 0.05);
+    }
 }

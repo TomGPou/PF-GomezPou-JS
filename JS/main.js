@@ -1,16 +1,17 @@
 import { getItemsLS, setItemsLS } from "./localStorage.js"
-import { products } from "./products.js"
 
 //Variables
 const productsList = document.querySelector("#productsList")
 let cart = getItemsLS('cart') || []
+let products = await fetch('assets/data/products.json')
+let productsParser = await products.json()
 
 // Renderizar prodductos
-function renderProducts() {
-    products.forEach((product) => {
+async function renderProducts() {
+    productsParser.forEach((product) => {
         const divCard = document.createElement('div');
 
-        divCard.classList.add('card', 'col-10', 'col-sm-8', 'col-md-5', 'col-lg-3', 'text-center', 'p-0', 'mt-3');
+        divCard.classList.add('card', 'col-9', 'col-sm-5', 'col-md-3', 'col-lg-2', 'text-center', 'p-0', 'mt-3');
         divCard.innerHTML = `
         <img src='${product.imgUrl}' class="card-img-top">
         <div class="card-body">
@@ -29,11 +30,25 @@ function renderProducts() {
 
 //Agregar al carrito
 function addToCart(e) {
-    let addedProduct = products.find(prod => prod.id === parseInt(e.target.id))
+    let addedProduct = productsParser.find(prod => prod.id === parseInt(e.target.id))
     cart.push(addedProduct);
-    setItemsLS('cart',cart);
+    cart = cart.sort((x, y) => x.name.localeCompare(y.name))
+
+    setItemsLS('cart', cart);
+    
+    Toastify({
+        text: `Se ha agregado ${addedProduct.name} al carrito`,
+        duration: 3000,
+        destination: "./cart.html",
+        close: true,
+        gravity: "bottom",
+        stopOnFocus: true,
+        style: {
+            background: "linear-gradient(to right, #FFEEF2, #F8D04D)",
+            color: "#04151F",
+        },
+    }).showToast();
 }
 
 //Inicio
-getItemsLS('cart');
 renderProducts();

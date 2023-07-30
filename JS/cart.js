@@ -67,10 +67,21 @@ function renderCart(e) {
 // Eliminar producto del carrito
 function deleteFromCart(e) {
     const id = parseInt(e.target.dataset.product);
-    cart = cart.filter((product) => product.id !== id);
-
+    const deletedProdIndex = cart.findIndex((product) => product.id === id);
+    const deletedProd = cart.splice(deletedProdIndex,1);
+    
     setItemsLS('cart',cart)
-    getItemsLS('cart')
+
+    Toastify({
+        text: `Se ha eliminado ${deletedProd[0].name} del carrito`,
+        duration: 3000,
+        close: true,
+        gravity: "bottom",
+        style: {
+            background: "linear-gradient(to right, #FFEEF2, #F8D04D)",
+            color: "#04151F",
+        },
+    }).showToast();
     renderCart();
 }
 

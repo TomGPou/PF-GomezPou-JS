@@ -1,11 +1,11 @@
 [
     {
-    "id":       1,
-    "name":     "Remera Eagle Negra",
-    "category": "remeras",
-    "imgUrl":   "./assets/img/remeraBlessedNegra.png",
-    "price":    5500,
-    "stock":    20
+        "id":       1,
+        "name":     "Remera Eagle Negra",
+        "category": "remeras",
+        "imgUrl":   "./assets/img/remeraBlessedNegra.png",
+        "price":    5500,
+        "stock":    20
     },
     {
         "id":       2,
@@ -16,7 +16,7 @@
         "stock":    20
     },
     {
-        "id":       2,
+        "id":       3,
         "name":     "Remera Eagle Blanca",
         "category": "remeras",
         "imgUrl":   "./assets/img/remeraBlessedBlanca.png",
@@ -24,71 +24,71 @@
         "stock":    10
     },
     {
-        "id":       3,
+        "id":       4,
         "name":     "Boxers CK x 3",
-        "category": "ropa interior hombre",
+        "category": "ropaInteriorHombre",
         "imgUrl":   "./assets/img/boxerCK.png",
         "price":    5000,
         "stock":    10
     },
     {
-        "id":       4,
+        "id":       5,
         "name":     "Boxer Lody",
-        "category": "ropa interior hombre",
+        "category": "ropaInteriorHombre",
         "imgUrl":   "./assets/img/boxerLody.png",
         "price":    2800,
         "stock":    10
     },
     {
-        "id":       5,
+        "id":       6,
         "name":     "Boxer Poker",
-        "category": "ropa interior hombre",
+        "category": "ropaInteriorHombre",
         "imgUrl":   "./assets/img/boxerPoker.png",
         "price":    1800,
-        "stock":    10
+        "stock":    0
     },
     {
-        "id":       6,
+        "id":       7,
         "name":     "Conjunto CK Blanco",
-        "category": "ropa interior mujer",
+        "category": "ropaInteriorMujer",
         "imgUrl":   "./assets/img/conjuntoCKBlanco.png",
         "price":    2800,
         "stock":    20
     },
     {
-        "id":       7,
+        "id":       8,
         "name":     "Conjunto CK Gris",
-        "category": "ropa interior mujer",
+        "category": "ropaInteriorMujer",
         "imgUrl":   "./assets/img/conjuntoCKGris.png",
         "price":    2800,
         "stock":    20
     },
     {
-        "id":       8,
+        "id":       9,
         "name":     "Conjunto CK Rojo",
-        "category": "ropa interior mujer",
+        "category": "ropaInteriorMujer",
         "imgUrl":   "./assets/img/conjuntoCKRojo.png",
         "price":    2800,
-        "stock":    20
+        "stock":    0
     },
     {
-        "id":       9,
+        "id":       10,
         "name":     "Conjunto Frida",
-        "category": "ropa interior mujer",
+        "category": "ropaInteriorMujer",
         "imgUrl":   "./assets/img/conjuntoFrida.png",
         "price":    2900,
         "stock":    20
     },
     {
-        "id":       10,
+        "id":       11,
         "name":     "Medias Alien",
         "category": "medias",
         "imgUrl":   "./assets/img/mediasAlien.png",
         "price":    1000,
-        "stock":    5
+        "stock":    0
     },
     {
-        "id":       11,
+        "id":       12,
         "name":     "Medias Animales x 3",
         "category": "medias",
         "imgUrl":   "./assets/img/mediasAnimales.png",
@@ -96,7 +96,7 @@
         "stock":    5
     },
     {
-        "id":       12,
+        "id":       13,
         "name":     "Medias Game Over",
         "category": "medias",
         "imgUrl":   "./assets/img/mediasGameOver.jpg",
@@ -104,7 +104,7 @@
         "stock":    5
     },
     {
-        "id":       13,
+        "id":       14,
         "name":     "Medias Peach",
         "category": "medias",
         "imgUrl":   "./assets/img/mediasPeach.png",
@@ -112,7 +112,7 @@
         "stock":    5
     },
     {
-        "id":       14,
+        "id":       15,
         "name":     "Medias Sushi",
         "category": "medias",
         "imgUrl":   "./assets/img/mediasSushi.png",

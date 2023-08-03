@@ -29,7 +29,6 @@ function renderCart(e) {
                 return true;
             }
             return false;
-            
         });
 
         cartNoRepeat.forEach((prod) => {
@@ -40,20 +39,20 @@ function renderCart(e) {
             const divCart = document.createElement("div");
             divCart.classList.add("card");
             divCart.innerHTML = `
-            <div class="row g-0">
-                <div class="col-md-4">
-                    <img src=".${prod.imgUrl}" class="img-fluid rounded-start" alt="${prod.name}">
-                </div>
-                <div class="col-md-4">
-                    <div class="card-body">
-                        <h5 class="card-title">${prod.name}</h5>
-                        <p class="card-text">${amount} x $ ${prod.price}</p>
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src=".${prod.imgUrl}" class="img-fluid rounded-start" alt="${prod.name}">
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-body">
+                            <h5 class="card-title">${prod.name}</h5>
+                            <p class="card-text">${amount} x $ ${prod.price}</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                    <button class="btnDelete btn btn-outline-danger" data-product="${prod.id}">Eliminar</button>
                     </div>
                 </div>
-                <div class="col-md-4">
-                <button class="btnDelete btn btn-outline-danger" data-product="${prod.id}">Eliminar</button>
-                </div>
-            </div>
             `;
             // boton delete
             const btnDelete = divCart.querySelector(".btnDelete");

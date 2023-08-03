@@ -45,7 +45,9 @@ footer .copyright {
   color: #04151F;
   background-color: #F8D04D;
   border: 0 solid none;
-  box-shadow: 0 0 5px #FFEEF2;
+}
+.card h3 {
+  font-size: 1em;
 }
 
 body {
